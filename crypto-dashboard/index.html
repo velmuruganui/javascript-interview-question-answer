@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: "Roboto", sans-serif;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: cornsilk;
+    }
+    .container{
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+   }
+   #card-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+   }
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .card-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .card-content {
+    flex: 1;
+  }
+  .symbol {
+    font-size: 0.8rem;
+    color: #888;
+    margin-right: 0.5rem;
+    text-transform: capitalize;
+  }
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .price-info {
+    display: flex;
+    align-items: center;
+  }
+  .price {
+    margin-right: 0.5rem;
+  }
+  .price-value {
+    font-weight: bold;
+  }
+  .price-change {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .change-value {
+    margin-right: 0.2rem;
+  }
+
+/* For negative price change (optional) */
+.red{ color: red; }
+.green{ color: green; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypro Dashboard</h1>
+        <div id="card-container"></div>
+    </div> 
+
+
+    <script src="./custom.js"></script>
+</body>
+</html>
