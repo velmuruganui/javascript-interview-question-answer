@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Rating</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? 
+    family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+      .ratings-wrapper{
+        display: inline-block;
+      }
+      .ratings{
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .ratings span {
+    cursor: pointer;
+    font-size: 50px;
+    transition: color .2s, transform .2s;
+}
+.ratings span:hover {
+    color: orange;
+    transform: scale(1.5);
+}
+.ratings span:hover ~ span {
+    color: orange;
+}
+
+.ratings span[data-clicked]{
+    color: orange;
+}
+
+.ratings span[data-clicked] ~ span{ color: orange;}
+
+    </style>
+</head>
+
+<body>
+
+    <a href="./about.html">About</a>
+    
+    <div class="ratings-wrapper">
+        <h1>iPhone 13</h1>
+        <div data-productid="iPhone 13" class="ratings">
+            <span data-rating="5">&#9733;</span>
+            <span data-rating="4">&#9733;</span>
+            <span data-rating="3">&#9733;</span>
+            <span data-rating="2">&#9733;</span>
+            <span data-rating="1">&#9733;</span>
+        </div>
+    </div>
+    
+    <br />
+
+    <div class="ratings-wrapper">
+        <h1>iPhone 14</h1>
+        <div data-productid="iPhone 14" class="ratings">
+            <span data-rating="5">&#9733;</span>
+            <span data-rating="4">&#9733;</span>
+            <span data-rating="3">&#9733;</span>
+            <span data-rating="2">&#9733;</span>
+            <span data-rating="1">&#9733;</span>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="ratings-wrapper">
+        <h1>iPhone 15</h1>
+        <div data-productid="iPhone 15" class="ratings">
+            <span data-rating="5">&#9733;</span>
+            <span data-rating="4">&#9733;</span>
+            <span data-rating="3">&#9733;</span>
+            <span data-rating="2">&#9733;</span>
+            <span data-rating="1">&#9733;</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

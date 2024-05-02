@@ -1,7 +1,7 @@
 const button = document.querySelector('#openModalButton');
 const modal = document.querySelector('#myModal');
 const close = document.querySelector('.close');
-
+ 
 const audioElement = new Audio('audio/error.mp3');
 
 function openModal() {
