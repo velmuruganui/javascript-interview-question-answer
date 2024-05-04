@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Search</title>
+    <style>
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #search-box {
+            width: 200px;
+            /* Adjust width as needed */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            list-style: none;
+            padding: 0;
+            max-height: 200px;
+            /* Adjust max-height as needed */
+            overflow-y: auto;
+            display: none;
+        }
+
+        #suggestions li {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #suggestions li:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Type your search..." autocomplete="off">
+        <ul id="suggestions"></ul>
+    </div>
+
+    <script src="./custom.js"></script>
+</body>
+
+</html>
+
+
+<!-- Tech stack : HTML, CSS, JAVASCRIPT
+
+On typing inside the search box, it should be suggest option
+Users should be able to select one of the options
+Searh should be performance enought
+It should avoid unneccesaary call
+It should be re-usable and customizable
+It should perist preiouvs data -->
