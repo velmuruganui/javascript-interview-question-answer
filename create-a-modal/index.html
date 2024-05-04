@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>create-a-modal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <style>
-        *{
+        * {
             font-family: "Roboto", sans-serif;
         }
-        button{ font-size: 18px }
+        button{
+            font-size: 18px;
+        }
         .modal{
             display: none;
             background-color: rgba(0, 0, 0, 0.5);
             position: fixed;
             width: 100%;
-            left: 0;
             height: 100%;
             top: 0;
+            left: 0;
         }
-        .modal-container {
+        .modal-container{
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
         }
-    .modal-content {
-        background-color: #fff;
-        border-radius: 8px;
-        width: 40%;
-    }
-    .modal-top {
-        border-bottom: 1px solid #999;
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 20px;
-    }
-    .modal-bottom p {
-    padding: 30px;
-    margin: 0;
-    }
-    .close{
-        font-size: 22px;
-        cursor: pointer;
-    }
-    body.modal-open {
-            overflow: hidden;
-    }
+        .modal-content{
+            background-color: #fff;
+            width: 50%;
+            border-radius: 8px;
+        }
+        .modal-top{
+            border-bottom: 1px solid #999;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+        .modal-bottom{
+            padding: 30px;
+        }
+        .modal-bottom p{ margin: 0;}
+        .close{ font-size: 22px; cursor: pointer; }
+        body.modal-open{ overflow: hidden; }
     </style>
 </head>
+
 <body>
+    <button id="opemModalButton">Open Model</button>
 
-    <!-- Interview Question -->
-    <div class="para">
-        <p> 1. Develop a webpage with a button that triggers the display of a popup modal along with an overlay.</p>
-        <p>2. Ensure that when the popup modal is open, the background content becomes unscrollable.</p>
-        <p> 3. The popup modal should include a title, content, and a close button. It should be possible to close the
-            modal by clicking the close button or pressing the ESC key.</p>
-        <p> 4. If any key other than the ESC key is pressed while the modal is open, an error audio should be played.
-        </p>
-    </div> <!-- Interview Question -->
-
-    <hr>
-    <br>
-    
-  <button id="openModalButton">Open Model</button>
-
-  <div id="myModal" class="modal">
-    <div class="modal-container">
-        <div class="modal-content">
-            <div class="modal-top">
-                <div class="modal-heading">I'm Modal</div>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-bottom">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates provident tempora, eius quod nisi hic? Aperiam, consectetur est ipsam aliquam ducimus, labore dolorem saepe enim quaerat vel ipsum illum excepturi!</p>
+    <div id="modal" class="modal">
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div class="modal-heading">I'm Modal </div>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-bottom">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis totam ratione necessitatibus
+                        voluptatem illo sint ducimus natus, optio ex eos ullam consequuntur ipsum ad! Quam inventore
+                        corporis pariatur cum harum?</p>
+                </div>
             </div>
         </div>
     </div>
-  </div>
-  <script src="./custom.js"></script>
+    <script src="./custom.js"></script>
 </body>
+
 </html>
